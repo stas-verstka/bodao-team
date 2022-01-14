@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<div class="wrapper">
+<svg style="display: none;">
+	<symbol viewBox="0 0 40 40" id="marker">
+		<path d="M20 0C12.2459 0 5.9375 6.30844 5.9375 14.0625C5.9375 16.6823 6.6632 19.2391 8.03664 21.4572L19.1995 39.446C19.4134 39.7906 19.7901 40 20.1952 40C20.1984 40 20.2014 40 20.2045 40C20.6132 39.9968 20.9907 39.7809 21.2006 39.4303L32.079 21.2672C33.3766 19.0959 34.0625 16.6046 34.0625 14.0625C34.0625 6.30844 27.7541 0 20 0ZM30.0677 20.0639L20.1775 36.577L10.0287 20.2223C8.88547 18.3761 8.26563 16.2461 8.26563 14.0625C8.26563 7.60078 13.5383 2.32812 20 2.32812C26.4617 2.32812 31.7266 7.60078 31.7266 14.0625C31.7266 16.1813 31.1476 18.2569 30.0677 20.0639Z" fill="white"/>
+		<path d="M20 7.03125C16.123 7.03125 12.9688 10.1855 12.9688 14.0625C12.9688 17.9148 16.0716 21.0938 20 21.0938C23.9768 21.0938 27.0312 17.8724 27.0312 14.0625C27.0312 10.1855 23.877 7.03125 20 7.03125ZM20 18.7656C17.4018 18.7656 15.2969 16.6537 15.2969 14.0625C15.2969 11.4778 17.4153 9.35938 20 9.35938C22.5847 9.35938 24.6953 11.4778 24.6953 14.0625C24.6953 16.6159 22.6394 18.7656 20 18.7656Z" fill="white"/>
+	</symbol>
+	<symbol viewBox="0 0 40 40" id="phone">
+		<g clip-path="url(#clip0_309_190)">
+			<path d="M38.9707 29.5026L33.9981 24.53C32.6272 23.1592 30.3964 23.1592 29.0255 24.53L26.7653 26.7903C25.7267 27.8289 24.0367 27.8285 22.9985 26.7906L13.2016 16.9854C12.1606 15.9444 12.1604 14.2595 13.2016 13.2183C13.5657 12.8542 14.6111 11.8088 15.4618 10.9581C16.8268 9.59321 16.8458 7.36938 15.4605 5.98422L10.4893 1.02859C9.11831 -0.342269 6.88761 -0.342269 5.52034 1.025C4.49721 2.03922 4.16721 2.36641 3.70846 2.82117C-1.2353 7.76485 -1.2353 15.8088 3.70822 20.7524L19.2311 36.2833C24.1864 41.2387 32.2067 41.2391 37.1624 36.2833L38.9707 34.4751C40.3417 33.1042 40.3417 30.8735 38.9707 29.5026ZM7.17425 2.68609C7.6312 2.22914 8.37464 2.22906 8.83308 2.68734L13.8043 7.64297C14.2624 8.10102 14.2624 8.84235 13.8043 9.30048L12.9755 10.1292L6.34971 3.50344L7.17425 2.68609ZM20.8889 34.626L5.36596 19.0949C1.54111 15.2701 1.33088 9.26423 4.7194 5.18821L11.326 11.7948C9.59003 13.7627 9.66238 16.7613 11.5437 18.6427L21.3403 28.4474C21.3404 28.4475 21.3405 28.4477 21.3406 28.4478C23.2199 30.3271 26.2184 30.4042 28.1887 28.6659L34.7955 35.2726C30.7324 38.6553 24.7401 38.4772 20.8889 34.626ZM37.3133 32.8176L36.4845 33.6464L29.8544 27.0163L30.683 26.1875C31.1401 25.7306 31.8836 25.7305 32.3406 26.1875L37.3132 31.1601C37.7702 31.6171 37.7702 32.3607 37.3133 32.8176Z" fill="white"/>
+		</g>
+	</symbol>
+</svg>
+	
+<header class="header">
+	<div class="container">
+		<nav class="header__menu">
+			<ul class="header__list">
+				<li class="header__left">
+					<a href="index.html" class="header__link header__logo">
+						<img src="img/logoes/logo.png" alt="">
+					</a>
+				</li>
+				<li class="header__middle">
+					<a href="#" class="header__link">
+						<svg>
+							<use xlink:href="#marker"></use>
+						</svg>
+					</a>
+					<div class="header__place place-h text16-24">
+						<div class="place-h__up">
+							<a href="#" class="place-h__link">
+								<svg>
+									<use xlink:href="#marker"></use>
+								</svg>
+							</a>
+							<a href="#">Москва <span class="place-h__none">, 1-ый Партийный пер., 1, стр. 57, к. 3.</span></a>
+						</div>
+						<div class="place-h__down">
+							<a href="#" class="place-h__link">
+								<svg>
+									<use xlink:href="#marker"></use>
+								</svg>
+							</a>
+							<a href="#">Мытищи <span class="place-h__none">, Летная 40к1 домофон 1.</span></a>
+						</div>
+					</div>
+				</li>
+				<li class="header__right">
+					<a href="#" class="header__link">
+						<svg>
+							<use xlink:href="#phone"></use>
+						</svg>
+					</a>
+					<div class="header__phone phone-h">
+						<a href="#" class="phone-h__up">+7 (777) 707-37-97</a>
+						<a href="#" class="phone-h__down">Написать нам в What’s app  </a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>		<main class="main">
+		   	<div class="home">
+				<div class="container">
+					<div class="home__image _anim-items">
+						<img src="img/home/back.jpg" alt="">
+					</div>
+					<div class="home__body">
+						<div class="home__sup-title _anim-items">Bodao team команда профессионального бойца ММА из Бразилии</div>
+						<div class="home__title _anim-items _anim-no-hide">Франсимар Бодао Барросо</div>
+						<div class="home__bottom">
+							<div class="home__sub-title _anim-items text18-27">У Бодао более 50 проф поединков за плечами, он проводил бои в лучших лигах ММА мира, 5 лет в UFC и 3 года в PFL. И теперь он открыл свои клубы в России что бы поделиться с вами своим опытом. </div>
+							<div class="home__buttons">
+								<div class="home__button _anim-items btn">
+									<a href="#">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about" id="info">
+				<div class="container">
+					<div class="about__title title52-86">О школе</div>
+					<div class="about__row">
+						<div class="about__item item-about">
+							<div class="item-about__image _anim-items">
+								<img src="img/about/1.jpg" alt="">
+								<div class="item-about__sub-image _anim-items" id="change">
+									<img src="img/about/2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="item-about about__item _anim-items">
+							<div class="item-about__title title52-86">О школе</div>
+							<div class="item-about__text text18-27">Повседневная практика показывает, что семантический разбор внешних противодействий, в своём классическом представлении, допускает внедрение благоприятных перспектив. А ещё сторонники тоталитаризма в науке, превозмогая сложившуюся непростую экономическую ситуацию, объективно рассмотрены соответствующими инстанциями. С учётом сложившейся международной обстановки, укрепление и развитие внутренней структуры выявляет срочную потребность поставленных обществом задач. Есть над чем задуматься: непосредственные участники технического прогресса будут своевременно верифицированы. Являясь всего лишь частью общей картины, акционеры крупнейших компаний будут</div>
+							<div class="item-about__buttons">
+								<div class="item-about__button btn" onmouseover="changeItem()" onmouseout="rechangeItem()">
+									<a href="#">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="coach" id="coachs">
+				<div class="container">
+					<div class="coach__main-title _anim-items _anim-no-hide title52-86">Тренеры</div>
+					<div class="coach__row">
+						<div class="coach__item">
+							<div class="coach__image _anim-items _anim-no-hide">
+								<img src="img/coaches/1.jpg" alt="">
+							</div>
+							<div class="coach__title _anim-items">
+								<p>Бодао</p>
+								<p>Барросо</p>
+							</div>
+							<div class="coach__text _anim-items">У Бодао более 50 проф поединков за плечами, он проводил бои в лучших лигах ММА мира, 5 лет в UFC и 3 года в PFL. И теперь он открыл свои клубы в России что бы поделиться с вами своим опытом. </div>
+						</div>
+						<div class="coach__item">
+							<div class="coach__image _anim-items _anim-no-hide">
+								<img src="img/coaches/2.jpg" alt="">
+							</div>
+							<div class="coach__title _anim-items">
+								<p>Бодао</p>
+								<p>Барросо</p>
+							</div>
+							<div class="coach__text _anim-items">У Бодао более 50 проф поединков за плечами, он проводил бои в лучших лигах ММА мира, 5 лет в UFC и 3 года в PFL. И теперь он открыл свои клубы в России что бы поделиться с вами своим опытом. </div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="species" id="variants">
+				<div class="container">
+					<div class="species__title title52-86">Направления</div>
+				</div>
+				<div class="species__row">
+					<div class="species__item">
+						<div class="species__image ibg">
+							<img src="img/species/box.jpg" alt="">
+						</div>
+						<div class="species__text">Бокс</div>
+					</div>
+					<div class="species__item">
+						<div class="species__image ibg">
+							<img src="img/species/kikbox.jpg" alt="">
+						</div>
+						<div class="species__text">Кикбоксинг</div>
+					</div>
+					<div class="species__item">
+						<div class="species__image ibg">
+							<img src="img/species/mma.jpg" alt="">
+						</div>
+						<div class="species__text">мма</div>
+					</div>
+					<div class="species__item">
+						<div class="species__image ibg">
+							<img src="img/species/jiu.jpg" alt="">
+						</div>
+						<div class="species__text">Бразильское <br> джиу джитсу</div>
+					</div>
+ 				</div>
+			</section>
+			<section class="product" id="timetable">
+				<div class="container">
+					<div class="product__title _anim-items _anim-no-hide title52-86">Расписание занятий</div>
+					<div class="product__row">
+						<div class="product__column _anim-items _anim-no-hide">
+							<div class="product__item item-product">
+								<div class="item-product__up">
+									<div class="item-product__title title36-43">1 день</div>
+									<div class="item-product__sub-title">3 раза в неделю</div>
+								</div>
+								<div class="item-product__text text18-27">Как уже неоднократно упомянуто, реплицированные с зарубежных источников, современные исследования представлены в исключительно положительном свете. Как принято считать, активно развивающиеся.</div>
+								<div class="item-product__bottom">
+									<div class="item-product__prise title36-43">41 788 ₽</div>
+									<div class="item-product__sub-prise">41 788 ₽</div>
+								</div>
+								<div class="item-product__button btn">
+									<a href="">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="product__column _anim-items _anim-no-hide">
+							<div class="product__item item-product">
+								<div class="item-product__up">
+									<div class="item-product__title title36-43">1 месяц</div>
+									<div class="item-product__sub-title">3 раза в неделю</div>
+								</div>
+								<div class="item-product__text text18-27">Как уже неоднократно упомянуто, реплицированные с зарубежных источников, современные исследования представлены в исключительно положительном свете. Как принято считать, активно развивающиеся.</div>
+								<div class="item-product__bottom">
+									<div class="item-product__prise title36-43">41 788 ₽</div>
+									<div class="item-product__sub-prise">41 788 ₽</div>
+								</div>
+								<div class="item-product__button btn">
+									<a href="">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="product__column _anim-items _anim-no-hide">
+							<div class="product__item item-product">
+								<div class="item-product__up">
+									<div class="item-product__title title36-43">2 месяц</div>
+									<div class="item-product__sub-title">3 раза в неделю</div>
+								</div>
+								<div class="item-product__text text18-27">Как уже неоднократно упомянуто, реплицированные с зарубежных источников, современные исследования представлены в исключительно положительном свете. Как принято считать, активно развивающиеся.</div>
+								<div class="item-product__bottom">
+									<div class="item-product__prise title36-43">41 788 ₽</div>
+									<div class="item-product__sub-prise">41 788 ₽</div>
+								</div>
+								<div class="item-product__button btn">
+									<a href="">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="product__column _anim-items _anim-no-hide">
+							<div class="product__item item-product">
+								<div class="item-product__up">
+									<div class="item-product__title title36-43">4 месяц</div>
+									<div class="item-product__sub-title">3 раза в неделю</div>
+								</div>
+								<div class="item-product__text text18-27">Как уже неоднократно упомянуто, реплицированные с зарубежных источников, современные исследования представлены в исключительно положительном свете. Как принято считать, активно развивающиеся.</div>
+								<div class="item-product__bottom">
+									<div class="item-product__prise title36-43">41 788 ₽</div>
+									<div class="item-product__sub-prise">41 788 ₽</div>
+								</div>
+								<div class="item-product__button btn">
+									<a href="">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="product__column _anim-items _anim-no-hide">
+							<div class="product__item item-product">
+								<div class="item-product__up">
+									<div class="item-product__title title36-43">6 месяц</div>
+									<div class="item-product__sub-title">3 раза в неделю</div>
+								</div>
+								<div class="item-product__text text18-27">Как уже неоднократно упомянуто, реплицированные с зарубежных источников, современные исследования представлены в исключительно положительном свете. Как принято считать, активно развивающиеся.</div>
+								<div class="item-product__bottom">
+									<div class="item-product__prise title36-43">41 788 ₽</div>
+									<div class="item-product__sub-prise">41 788 ₽</div>
+								</div>
+								<div class="item-product__button btn">
+									<a href="">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="product__column _anim-items _anim-no-hide">
+							<div class="product__item item-product">
+								<div class="item-product__up">
+									<div class="item-product__title title36-43">1 год</div>
+									<div class="item-product__sub-title">3 раза в неделю</div>
+								</div>
+								<div class="item-product__text text18-27">Как уже неоднократно упомянуто, реплицированные с зарубежных источников, современные исследования представлены в исключительно положительном свете. Как принято считать, активно развивающиеся.</div>
+								<div class="item-product__bottom">
+									<div class="item-product__prise title36-43">41 788 ₽</div>
+									<div class="item-product__sub-prise">41 788 ₽</div>
+								</div>
+								<div class="item-product__button btn">
+									<a href="">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="instagram">
+				<div class="container">
+					<div class="instagram__title _anim-items _anim-no-hide title52-86">Блок инстаграмма</div>
+					<div class="instagram__row">
+						<div class="instagram__item item-instagram _anim-items _anim-no-hide">
+							<a href="#">
+								<img src="img/inst/1.jpg" alt="">
+							</a>
+						</div>
+						<div class="instagram__item item-instagram _anim-items _anim-no-hide">
+							<a href="#">
+								<img src="img/inst/2.jpg" alt="">
+							</a>						
+						</div>
+						<div class="instagram__item item-instagram _anim-items _anim-no-hide">
+							<a href="#">
+								<img src="img/inst/3.jpg" alt="">
+							</a>					
+						</div>
+						<div class="instagram__item item-instagram _anim-items _anim-no-hide">
+							<a href="#">
+								<img src="img/inst/4.jpg" alt="">
+							</a>					
+						</div>
+						<div class="instagram__item item-instagram _anim-items _anim-no-hide">
+							<a href="#">
+								<img src="img/inst/5.jpg" alt="">
+							</a>					
+						</div>
+						<div class="instagram__item item-instagram _anim-items _anim-no-hide">
+							<a href="#">
+								<img src="img/inst/6.jpg" alt="">
+							</a>					
+						</div>
+						<div class="instagram__item item-instagram _anim-items _anim-no-hide">
+							<a href="#">
+								<img src="img/inst/7.jpg" alt="">
+							</a>					
+						</div>
+						<div class="instagram__item item-instagram _anim-items _anim-no-hide">
+							<a href="#">
+								<img src="img/inst/8.jpg" alt="">
+							</a>					
+						</div>
+						<div class="instagram__item item-instagram _anim-items _anim-no-hide">
+							<a href="#">
+								<img src="img/inst/9.jpg" alt="">
+							</a>					
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+<svg style="display: none;">
+	<symbol viewBox="0 0 25 25" id="facebook">
+		<path d="M10 22.5V12.5H6.66669V9.16667H10V7.37667C10 3.9875 11.6509 2.5 14.4675 2.5C15.8167 2.5 16.53 2.6 16.8675 2.64583V5.83333H14.9467C13.7509 5.83333 13.3334 6.46417 13.3334 7.7425V9.16667H16.8375L16.3617 12.5H13.3334V22.5H10Z"/>
+	</symbol>
+	<symbol viewBox="0 0 25 25" id="twitter">
+		<path d="M23 4.12142C22.139 4.50326 21.2743 4.7915 20.3159 4.88883C21.2743 4.31234 22.0417 3.354 22.4235 2.29834C21.4652 2.87484 20.5068 3.25667 19.4549 3.45133C18.4966 2.493 17.25 1.9165 15.9098 1.9165C13.3193 1.9165 11.2118 4.02409 11.2118 6.61084C11.2118 6.99642 11.2118 7.37825 11.3091 7.6665C7.37842 7.47559 3.93066 5.65251 1.62842 2.77751C1.14925 3.45133 0.958333 4.31234 0.958333 5.17334C0.958333 6.8055 1.81934 8.243 3.06592 9.104C2.2985 9.00667 1.53483 8.81576 0.958333 8.52751C0.958333 8.52751 0.958333 8.52751 0.958333 8.62484C0.958333 10.9233 2.58675 12.84 4.69434 13.2256C4.3125 13.3192 3.93066 13.4165 3.4515 13.4165C3.16325 13.4165 2.875 13.4165 2.58675 13.3192C3.16325 15.2358 4.889 16.5798 6.99658 16.5798C5.36816 17.8263 3.35417 18.59 1.14925 18.59C0.767415 18.59 0.381836 18.59 0 18.4964C2.10758 19.8366 4.60075 20.604 7.1875 20.604C15.9098 20.604 20.6042 13.4165 20.6042 7.18734C20.6042 6.99642 20.6042 6.8055 20.6042 6.61084C21.5625 5.94075 22.3299 5.07975 23 4.12142Z"/>
+	</symbol>
+	<symbol viewBox="0 0 25 25" id="in">
+		<path d="M7.50001 20.8333H3.33334V8.33333H7.50001V20.8333ZM5.41751 6.66667C4.26501 6.66667 3.33334 5.7325 3.33334 4.5825C3.33334 3.4325 4.26668 2.5 5.41751 2.5C6.56584 2.5 7.50001 3.43417 7.50001 4.5825C7.50001 5.7325 6.56584 6.66667 5.41751 6.66667ZM22.5 20.8333H18.4942V14.75C18.4942 13.2992 18.4667 11.4333 16.4117 11.4333C14.3258 11.4333 14.005 13.0133 14.005 14.645V20.8333H10V8.32417H13.845V10.0333H13.8992C14.4342 9.05 15.7417 8.01333 17.6917 8.01333C21.75 8.01333 22.5 10.6042 22.5 13.9725V20.8333Z"/>
+	</symbol>
+	<symbol viewBox="0 0 25 25" id="instagram">
+		<path d="M8 1.5C4.415 1.5 1.5 4.415 1.5 8V17C1.5 20.585 4.415 23.5 8 23.5H17C20.585 23.5 23.5 20.585 23.5 17V8C23.5 4.415 20.585 1.5 17 1.5H8ZM18.5 5.5C19.05 5.5 19.5 5.95 19.5 6.5C19.5 7.05 19.05 7.5 18.5 7.5C17.95 7.5 17.5 7.05 17.5 6.5C17.5 5.95 17.95 5.5 18.5 5.5ZM12.5 7C15.535 7 18 9.465 18 12.5C18 15.535 15.535 18 12.5 18C9.465 18 7 15.535 7 12.5C7 9.465 9.465 7 12.5 7ZM12.5 8C10.02 8 8 10.02 8 12.5C8 14.98 10.02 17 12.5 17C14.98 17 17 14.98 17 12.5C17 10.02 14.98 8 12.5 8Z"/>
+	</symbol>
+</svg>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__row">
+			<div class="footer__item item-footer item-footer_1">
+				<div class="item-footer__logo">
+					<a href="index.html">
+						<img src="img/logoes/logo.png" alt="">
+					</a>
+				</div>
+				<div class="item-footer__text-logo text18-27">Как уже неоднократно упомянуто, реплицированные с зарубежных источников, современные исследов ания представлены в исключительно положительном свете. Как принято считать, активно развивающиеся.</div>
+				<ul class="item-footer__icons">
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="#twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="#in"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="#instagram"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<div class="item-footer__policy">
+					<a href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+			<div class="footer__item item-footer item-footer_2">
+				<div class="item-footer__title">Разделы сайта</div>
+				<div class="item-footer__text">
+					<div class="item-footer__link">
+						<a href="#info">О школе</a>
+					</div>
+					<div class="item-footer__link">
+						<a href="#coachs">Тренеры</a>
+					</div>
+					<div class="item-footer__link">
+						<a href="#variants">Направления</a>
+					</div>
+					<div class="item-footer__link">
+						<a href="#timetable">Расписание занятий</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__item item-footer item-footer_3">
+				<div class="item-footer__title">Контакты</div>
+				<div class="item-footer__paragraphs">
+					<div class="item-footer__paragraph">
+						<div class="item-footer__sub-title">Номер телефона; What’s app  </div>
+						<div class="item-footer__sub-text">+7(909)933-00-59</div>
+					</div>
+					<div class="item-footer__paragraph">
+						<div class="item-footer__sub-title">эл.Почта</div>
+						<div class="item-footer__sub-text">nestya@inbox.ru</div>
+					</div>
+					<div class="item-footer__paragraph">
+						<div class="item-footer__sub-title">Адреса залов</div>
+						<div class="item-footer__sub-text">
+							<p>Москва, 1-ый Партийный пер., 1, стр. 57, к. 3.</p>
+							<p>Мытищи, Летная 40к1 домофон 1.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__underground">
+			<a href="#">Политика конфиденциальности</a>
+			<a href="#">© 2021. Все права защищены</a>
+		</div>
+	</div>
+</footer>	</div>
+	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+	<script src="js/script.js"></script>	
+</body>
+</html>
